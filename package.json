@@ -1,0 +1,56 @@
+{
+  "name": "haas",
+  "description": "Houmous as a service",
+  "version": "0.0.1",
+  "author": "Jérémie Zarca @jzarca01",
+  "bin": {
+    "houmous": "./bin/run"
+  },
+  "bugs": "https://github.com/jzarca01/haas/issues",
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.5.0",
+    "inquirer-autocomplete-prompt": "^1.0.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "globby": "^10",
+    "mocha": "^5",
+    "nyc": "^13"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/jzarca01/haas",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "houmous",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "jzarca01/haas",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
