@@ -5,10 +5,14 @@ inquirer.registerPrompt(
   require("inquirer-autocomplete-prompt")
 );
 
+const { isConnected } = require("../lib/utils");
 const { findPlace } = require("../lib/maps");
 
 class PlaceCommand extends Command {
   async run() {
+    if (!isConnected) {
+      this.error("Vous n'êtes pas connecté.");
+    }
     const { args } = this.parse(PlaceCommand);
     if (args.add) {
       let gmapsResults;
@@ -33,7 +37,7 @@ class PlaceCommand extends Command {
     } else if (flags.list) {
       // to be implemented : get from DB
     } else {
-      this.log('Nothing to see here');
+      this.log("Nothing to see here");
     }
   }
 }
