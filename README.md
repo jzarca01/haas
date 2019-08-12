@@ -1,7 +1,7 @@
-haas
+Haas - Houmous as a Service
 ====
 
-Houmous as a service
+![logo](./logo.png)
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/haas.svg)](https://npmjs.org/package/haas)
@@ -28,26 +28,63 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`houmous hello`](#houmous-hello)
+* [`houmous signup`](#houmous-signup)
+* [`houmous login`](#houmous-login)
+* [`houmous logout`](#houmous-logout)
+* [`houmous place`](#houmous-place)
 * [`houmous help [COMMAND]`](#houmous-help-command)
 
-## `houmous hello`
+## `houmous signup`
 
-Describe the command here
+Gestion de l'inscription de l'utilisateur
 
 ```
 USAGE
-  $ houmous hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+  $ houmous signup
 ```
 
-_See code: [src/commands/hello.js](https://github.com/jzarca01/haas/blob/v0.0.1/src/commands/hello.js)_
+_See code: [src/commands/signup.js](./src/commands/signup.js)_
+
+## `houmous login`
+
+Gestion de la connexion de l'utilisateur
+
+```
+USAGE
+  $ houmous login
+
+OPTIONS
+  -e, --email zz@zz.com
+  -p, --password 123456
+```
+
+_See code: [src/commands/login.js](./src/commands/login.js)_
+
+## `houmous logout`
+
+Gestion de la déconnexion de l'utilisateur
+
+```
+USAGE
+  $ houmous logout
+```
+
+_See code: [src/commands/logout.js](./src/commands/logout.js)_
+
+## `houmous place`
+
+Gestion des adresses liées à un compte HaaS
+
+```
+USAGE
+  $ houmous place
+
+ARGUMENTS
+  add ajouter une adresse
+  list lister les adresses enregistrées
+```
+
+_See code: [src/commands/place.js](./src/commands/place.js)_
 
 ## `houmous help [COMMAND]`
 
