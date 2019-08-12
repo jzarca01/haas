@@ -1,4 +1,4 @@
-Haas - Houmous as a Service
+HaaS - Houmous as a Service
 ====
 
 ![logo](./logo.png)
@@ -54,8 +54,8 @@ USAGE
   $ houmous login
 
 OPTIONS
-  -e, --email zz@zz.com
-  -p, --password 123456
+  -e, --email=zz@zz.com
+  -p, --password=123456
 ```
 
 _See code: [src/commands/login.js](./src/commands/login.js)_
