@@ -27,7 +27,7 @@
     "@oclif/plugin-plugins": "^2.4.7",
     "axios": "^1.4.0",
     "axios-retry": "^3.5.0",
-    "inquirer": "^9.2.4",
+    "inquirer": "^9.2.5",
     "inquirer-autocomplete-prompt": "^3.0.0",
     "libphonenumber-js": "^1.10.30"
   },
