@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.30",
-    "@oclif/test": "^2.3.19",
+    "@oclif/test": "^2.4.4",
     "@types/inquirer": "^9.0.3",
     "@types/inquirer-autocomplete-prompt": "^3.0.0",
     "@types/mocha": "^9.0.0",
